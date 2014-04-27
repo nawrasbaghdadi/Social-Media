@@ -9,58 +9,117 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
 
-    <div class="container">
+    <div class="container" id="page_content">
+
+    <nav id="side_nav">
+      <ul>
+        <li><a href="">
+          <span class="glyphicon glyphicon-dashboard"></span>
+         <span class="nav_title">DashBoard</span></a>
+       </li>
+        <li><a href="">
+          <span class="glyphicon glyphicon-dashboard"></span>
+         <span class="nav_title">DashBoard</span></a>
+       </li>
+        <li><a href="">
+          <span class="glyphicon glyphicon-dashboard"></span>
+         <span class="nav_title">DashBoard</span></a>
+       </li>
+      </ul>
+    </nav>
+    <div class="post_panel">
+        <div class="col-md-12 post_form">
+          <form  action="" method="POST">
+            <h6 class="pull-right" id="counter">320 characters remaining</h6>
+            <textarea class="form-control counted" name="message" placeholder="Type in your message" rows="5" style="margin-bottom:10px;"></textarea>
+            <div class="btn-group">
+            <button type="button" class="btn btn-default btn-sml"><span class="glyphicon glyphicon-picture"></span>
+            <button type="button" class="btn btn-default btn-sml"><span class="glyphicon glyphicon-plus"></span>
+            </button>
+            <div class="col-md-8 pull-right">
+            <input type="text" class="form-control pull left" placeholder="Share link" /> 
+          </div>
+          </div>
+          <button class="btn btn-info btn-block" type="submit">Post New Message</button>
+          </form>
+        </div>
+        <div class="accounts">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active facebook" >
+            <a href="#">
+            <span class="badge pull-right">42</span>
+            <div class="squaredOne">
+              <input type="checkbox" value="None" id="squaredOne" name="check" />
+              <label for="squaredOne"></label>
+            </div>    facebook
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="#">
+            <span class="badge pull-right">42</span>
+            <div class="squaredOne">
+              <input type="checkbox" value="None" id="squaredOne2" name="check1" />
+              <label for="squaredOne2"></label>
+            </div>    twitter
+            </a>
+          </li>
+          <li class="gplus">
+            <a href="#">
+            <span class="badge pull-right">42</span>
+            <div class="squaredOne">
+              <input type="checkbox" value="None" id="squaredOne3" name="check2" />
+              <label for="squaredOne3"></label>
+            </div>    gplus
+            </a>
+          </li>
+          <li class="facebook" >
+            <a href="#">
+            <span class="badge pull-right">42</span>
+            <div class="squaredOne">
+              <input type="checkbox" value="None" id="squaredOne" name="check" />
+              <label for="squaredOne"></label>
+            </div>    facebook
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="#">
+            <span class="badge pull-right">42</span>
+            <div class="squaredOne">
+              <input type="checkbox" value="None" id="squaredOne2" name="check1" />
+              <label for="squaredOne2"></label>
+            </div>    twitter
+            </a>
+          </li>
+          <li class="gplus">
+            <a href="#">
+            <span class="badge pull-right">42</span>
+            <div class="squaredOne">
+              <input type="checkbox" value="None" id="squaredOne3" name="check2" />
+              <label for="squaredOne3"></label>
+            </div>    gplus
+            </a>
+          </li>
+         
+        </ul>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+    </div>
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
@@ -94,6 +153,7 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
+
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
