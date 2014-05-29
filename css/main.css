@@ -119,7 +119,8 @@ a.active{
 .accounts > ul > li.active a{
 	color: #fff;
 }
-.accounts .acc-groups ul{
+.accounts .acc-groups ul,
+.selected-accounts ul{
 	list-style: none;
 	overflow: hidden;
 	padding:10px 1px 10px 8px;
@@ -139,7 +140,8 @@ a.active{
 .acc-groups .glyphicon{
 	display: block;
 }
-.acc-groups .thumbnail{
+.acc-groups .thumbnail,
+.selected-accounts .thumbnail{
 	padding: 0;
 	margin-right: 3px;
 	margin-bottom: 10px;
@@ -172,14 +174,14 @@ a.active{
 .accounts > ul > li.youtube.active a{
 	background: #e52d27;
 }
-.acc-groups ul li a i{
+.acc-groups ul li  i{
 	display: none;
 }
-.acc-groups ul li a.active i{
+.acc-groups ul li.active i,
+.selected-accounts ul li i {
 	position: absolute;
 	display: inline-block;
 	bottom: 0;
 	right: 0;
 	color: green;
-
 }
