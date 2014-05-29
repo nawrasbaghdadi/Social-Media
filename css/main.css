@@ -129,7 +129,8 @@ a.active{
 .selected-accounts ul li{
 	float: left;
 }
-.accounts .acc-groups ul li a{
+.accounts .acc-groups ul li a,
+.selected-accounts ul li a{
 	width: 100%;
 	height: 100%;
 	display: block;
@@ -174,14 +175,16 @@ a.active{
 .accounts > ul > li.youtube.active a{
 	background: #e52d27;
 }
-.acc-groups ul li  i{
+.acc-groups ul li  i,
+.acc-groups ul li.active i.fa-times{
 	display: none;
 }
 .acc-groups ul li.active i,
-.selected-accounts ul li i {
+.selected-accounts ul li i{
 	position: absolute;
 	display: inline-block;
 	bottom: 0;
 	right: 0;
 	color: green;
 }
+

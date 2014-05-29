@@ -8,6 +8,7 @@ $(document).ready(function () {
 	}
 
 	active('.accounts > ul > li');
+	active('#side-nav > ul > li > a');
 	//active('.acc-groups .thumbnail');
 	function toggel (selector) {
 		$(this).toggleClass('active');
@@ -25,7 +26,7 @@ $(document).ready(function () {
 		 	$el = $(this).clone()[0];
 		 	id=$(this).attr('id');
 			if($(this).hasClass('active')){
-			$('.selected-accounts ul').append($el);			
+			$('.selected-accounts ul').append($el);	
 			}else{
 			$('#'+id).remove();	
 			}
@@ -35,6 +36,10 @@ $(document).ready(function () {
 	$('.create-post').on('click',function (e){
 		e.preventDefault();
 		$('.post-panel').toggleClass('panel-active');
+	})
+	$('body').on('click', '.selected-accounts .thumbnail' ,function (e) {
+		e.preventDefault();
+		$(this).remove();
 	})
 	
     $('#layout-changer a').click(function (e) {
