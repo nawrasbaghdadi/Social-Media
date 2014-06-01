@@ -9,7 +9,6 @@ $(document).ready(function () {
 
 	active('.accounts > ul > li');
 	active('#side-nav > ul > li > a');
-	//active('.acc-groups .thumbnail');
 	function toggel (selector) {
 		$(this).toggleClass('active');
 		$el = $(this).clone();
@@ -20,7 +19,6 @@ $(document).ready(function () {
 			($el).remove();	
 		}
 	}
-	//$('.acc-groups .thumbnail')[0].addEventListener('click' , toggel , false);
 	$('.acc-groups .thumbnail').on('click',function (e){
 		 $(this).toggleClass('active',10).promise().done(function() {
 		 	$el = $(this).clone()[0];
@@ -31,7 +29,6 @@ $(document).ready(function () {
 			$('#'+id).remove();	
 			}
 		});
-		
 	})
 	$('.create-post').on('click',function (e){
 		e.preventDefault();
@@ -41,12 +38,34 @@ $(document).ready(function () {
 		e.preventDefault();
 		$(this).remove();
 	})
-	
     $('#layout-changer a').click(function (e) {
      e.preventDefault()
       $(this).tab('show');
      })
-
-
-	// body...
+   
 })
+
+ //////Counter//////
+    
+    $.fn.extend( {
+        limiter: function(limit, elem) {
+            $(this).on("keyup focus", function() {
+                setCount(this, elem);
+            });
+            function setCount(src, elem) {
+                var chars = src.value.length;
+                if (chars > limit) {
+                    src.value = src.value.substr(0, limit);
+                    chars = limit;
+                }
+                elem.html( limit - chars );
+            }
+            setCount($(this)[0], elem);
+        }
+    });
+	
+		var elem = $("#counter span");
+        $(".counted").limiter(300, elem);
+
+////////
+	
