@@ -11,10 +11,10 @@
 	height: 100%;
 	position: fixed;
 	top:0;
-	z-index: 2;
+	z-index: 10;
 	background: #ccc;
 	width: 80px;
-	overflow: hidden;
+	xoverflow: hidden;
 }
 #side-nav > ul{
 	list-style: none;
@@ -22,6 +22,7 @@
 	bottom: 0;
 	position: absolute;
 	top: 0;
+	z-index: 4;
 }
 #side-nav,
 #side-nav > ul {
@@ -62,11 +63,12 @@ a.active{
 	padding-top: 15px;
 	position: absolute;
 	left: -450px;
-	z-index: 1;
+	z-index: 8;
 	transition: left 0.5s;
 	-webkit-transition: left 0.5s; 
 	-moz-transition: left 0.5s; 
 	-o-transition: left 0.5s; 
+	box-shadow: 5px 0 10px #888888;
 
 }
 .post-panel .post-form{
@@ -187,4 +189,34 @@ a.active{
 	right: 0;
 	color: green;
 }
-
+#alarabiya-panel{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 30%;
+	left: -440px;
+	background: #e0e2e4;
+	z-index: 1;
+	padding: 1%;
+	-webkit-transition: left 0.5s; 
+	-moz-transition: left 0.5s; 
+	-o-transition: left 0.5s;
+}
+.articles-active{
+	left:510px !important;
+}
+.ui-autocomplete{
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+    background: #eee;
+    width: 280px !important;
+    z-index: 999;
+}
+.ui-autocomplete li{
+	list-style-type: none;
+}
+.ui-helper-hidden-accessible{
+	display: none;
+}

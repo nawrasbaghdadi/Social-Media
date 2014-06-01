@@ -1,443 +1,451 @@
-counter<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.css">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
 
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-       <nav id="side-nav">
-      <ul>
-        <li><a href="">
-          <span class="glyphicon glyphicon-home"></span>
-         <span class="nav-title">Home</span></a>
-       </li>
-        <li><a href="" class="create-post"  id="create-post">
-          <span class="glyphicon glyphicon-send"></span>
-         <span class="nav-title">Create Post</span></a>
-       </li>
-        <li><a href="">
-          <span class="glyphicon glyphicon-dashboard"></span>
-         <span class="nav-title">DashBoard</span></a>
-       </li>
-        <li><a href="">
-          <span class="glyphicon glyphicon-dashboard"></span>
-         <span class="nav-title">DashBoard</span></a>
-       </li>
-      </ul>
-    </nav>
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
+                <!-- Main jumbotron for a primary marketing message or call to action -->
+                <nav id="side-nav">
+                  <ul>
+                    <li><a href="">
+                      <span class="glyphicon glyphicon-home"></span>
+                      <span class="nav-title">Home</span></a>
+                    </li>
+                    <li><a href="" class="create-post"  id="create-post">
+                      <span class="glyphicon glyphicon-send"></span>
+                      <span class="nav-title">Create Post</span></a>
+                    </li>
+                    <li><a href="">
+                      <span class="glyphicon glyphicon-dashboard"></span>
+                      <span class="nav-title">DashBoard</span></a>
+                    </li>
+                    <li><a href="">
+                      <span class="glyphicon glyphicon-dashboard"></span>
+                      <span class="nav-title">DashBoard</span></a>
+                    </li>
+                  </ul>
+                </nav>
 
-    <div class="post-panel" id="post-panel">
-        <div class="selected-accounts">
-          <ul></ul>
-        </div>
-    <div class="col-md-12 post-form">
-          <form  action="" method="POST">
-            <h6 class="pull-right" id="counter"><span>320</span> characters remaining</h6>
-            <textarea class="form-control counted" name="message" placeholder="Type in your message" rows="5" style="margin-bottom:10px;"></textarea>
-            <div class="btn-group">
-            <button type="button" class="btn btn-default btn-sml"><span class="glyphicon glyphicon-picture"></span>
-            <button type="button" class="btn btn-default btn-sml"><span class="glyphicon glyphicon-plus"></span>
-            </button>
-            <div class="col-md-8 pull-right">
-            <input type="text" class="form-control pull left" placeholder="Share link" /> 
-          </div>
-          </div>
-          <button class="btn btn-info btn-block" type="submit">Post New Message</button>
-          </form>
-        </div>
-             <div class="accounts">
-        <ul class="nav nav-pills nav-stacked">
-          <li class="facebook" >
-            <a href="#" data-toggle="collapse" data-target="#fbaccounts">
-             <i class="fa fa-facebook"></i> Facebook
-            </a>
-          </li>
-          <div id="fbaccounts" class="acc-groups collapse">
-              <ul>
-                <li class="thumbnail" id="1" >
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48&text=1" alt="ff" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="2">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48&text=2" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="3" >
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48&text=3" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="4">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48&text=4" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="5">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48&text=5" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="6">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48&text=6" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="7">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48&text=7" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="8">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48&text=8" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-          </ul>    
-          </div>
-          <li class="twitter">
-            <a href="#" data-toggle="collapse" data-target="#twaccounts">
-            <i class="fa fa-twitter"></i>  Twitter
-            </a>
-          </li>
-          <div id="twaccounts" class="acc-groups collapse">
-              <ul>
-                <li class="thumbnail"  id="9">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="10">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="11">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="12">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="13">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="14">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="15">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="16">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-              </ul>
+                <div class="post-panel" id="post-panel">
+                  <div class="selected-accounts">
+                    <ul></ul>
+                  </div>
+                  <div class="col-md-12 post-form">
+                    <form  action="" method="POST">
+                      <h6 class="pull-right" id="counter"><span>320</span> characters remaining</h6>
+                      <textarea class="form-control counted" name="message" placeholder="Type in your message" rows="5" style="margin-bottom:10px;"></textarea>
+                      <div class="btn-group">
+                        <input type="file" data-filename-placement="inside">
+                        <button type="button" class="btn btn-default btn-sml" id="add-article"><span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <div class="col-md-8 pull-right">
+                          <input type="text" class="form-control pull left" placeholder="Share link" /> 
+                        </div>
+                      </div>
+                      <button class="btn btn-info btn-block" type="submit">Post New Message</button>
+                    </form>
+                  </div>
+                  <div class="accounts">
+                    <ul class="nav nav-pills nav-stacked">
+                      <li class="facebook" >
+                        <a href="#" data-toggle="collapse" data-target="#fbaccounts">
+                         <i class="fa fa-facebook"></i> Facebook
+                       </a>
+                     </li>
+                     <div id="fbaccounts" class="acc-groups collapse">
+                      <ul>
+                        <li class="thumbnail" id="1" >
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48&text=1" alt="ff" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="2">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48&text=2" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="3" >
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48&text=3" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="4">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48&text=4" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="5">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48&text=5" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="6">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48&text=6" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="7">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48&text=7" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="8">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48&text=8" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                      </ul>    
+                    </div>
+                    <li class="twitter">
+                      <a href="#" data-toggle="collapse" data-target="#twaccounts">
+                        <i class="fa fa-twitter"></i>  Twitter
+                      </a>
+                    </li>
+                    <div id="twaccounts" class="acc-groups collapse">
+                      <ul>
+                        <li class="thumbnail"  id="9">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="10">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="11">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="12">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="13">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="14">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="15">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="16">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <li class="gplus">
+                      <a href="#" data-toggle="collapse" data-target="#gpaccounts">
+                        <i class="fa fa-google-plus"></i> Google Plus
+                      </a>
+                    </li>
+                    <div id="gpaccounts" class="acc-groups collapse">
+                      <ul>
+                        <li class="thumbnail" id="17">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="18">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="19">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="20">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="21">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="22">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="23">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                        <li class="thumbnail" id="24">
+
+                          <a href="#">
+                            <img src="http://placehold.it/48X48" />
+                            <i class="fa fa-check"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <li class="youtube">
+                      <a href="#" data-toggle="collapse" data-target="#youaccounts">
+                       <i class="fa fa-youtube"></i> YouTube
+                     </a>
+                   </li>
+                   <div id="youaccounts" class="acc-groups collapse">
+                    <ul>
+                      <li class="thumbnail" id="25">
+
+                        <a href="#">
+                          <img src="http://placehold.it/48X48" />
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </li>
+                      <li class="thumbnail" id="26">
+
+                        <a href="#">
+                          <img src="http://placehold.it/48X48" />
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </li>
+                      <li class="thumbnail" id="27">
+
+                        <a href="#">
+                          <img src="http://placehold.it/48X48" />
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </li>
+                      <li class="thumbnail" id="28">
+
+                        <a href="#">
+                          <img src="http://placehold.it/48X48" />
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </li>
+                      <li class="thumbnail" id="29">
+
+                        <a href="#">
+                          <img src="http://placehold.it/48X48" />
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </li>
+                      <li class="thumbnail" id="30">
+
+                        <a href="#">
+                          <img src="http://placehold.it/48X48" />
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </li>
+                      <li class="thumbnail" id="31">
+
+                        <a href="#">
+                          <img src="http://placehold.it/48X48" />
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </li>
+                      <li class="thumbnail" id="32">
+
+                        <a href="#">
+                          <img src="http://placehold.it/48X48" />
+                          <i class="fa fa-check"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
             </div>
-          <li class="gplus">
-            <a href="#" data-toggle="collapse" data-target="#gpaccounts">
-                <i class="fa fa-google-plus"></i> Google Plus
-            </a>
-          </li>
-           <div id="gpaccounts" class="acc-groups collapse">
-              <ul>
-                <li class="thumbnail" id="17">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="18">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="19">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="20">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="21">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="22">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="23">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="24">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-              </ul>
-            </div>
-          <li class="youtube">
-            <a href="#" data-toggle="collapse" data-target="#youaccounts">
-             <i class="fa fa-youtube"></i> YouTube
-            </a>
-          </li>
-           <div id="youaccounts" class="acc-groups collapse">
-              <ul>
-                <li class="thumbnail" id="25">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="26">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="27">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="28">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="29">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="30">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="31">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-                 <li class="thumbnail" id="32">
-                  
-                  <a href="#">
-                  <img src="http://placehold.it/48X48" />
-                  <i class="fa fa-check"></i>
-                </a>
-                </li>
-              </ul>
-            </div>
-        </ul>
-    </div>
-        
-    </div>
-    <div class="container" id="page-content">
-     <ul class="nav nav-tabs layout-changer" id="layout-changer">
-  <li class="active"><a href="#facebook" data-toggle="tab">Facebook</a></li>
-  <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
-  <li><a href="#google" data-toggle="tab">Google+</a></li>
-  <li><a href="#custom" data-toggle="tab">Custom</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane active" id="facebook">
+                 <div class="articles" id="alarabiya-panel">
+                  <div class="input-group custom-search-form">
+              <input type="text" class="form-control" id="search">
+              <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-ok"></span>
+             </button>
+             </span>
+             </div><!-- /input-group -->
+              </div>
+            <div class="container" id="page-content">
+             <ul class="nav nav-tabs layout-changer" id="layout-changer">
+              <li class="active"><a href="#facebook" data-toggle="tab">Facebook</a></li>
+              <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
+              <li><a href="#google" data-toggle="tab">Google+</a></li>
+              <li><a href="#custom" data-toggle="tab">Custom</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="facebook">
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4" >
-          <h2>Facebook</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4" >
-          <h2>Twitter</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4" >
-          <h2>Google+</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-  </div>
-  <div class="tab-pane" id="twitter">
-    <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4" >
-          <h2>twitter</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4" >
-          <h2>Twitter</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4" >
-          <h2>Google+</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-  </div>
-  <div class="tab-pane" id="google">
-  <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4" >
-          <h2>google</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4" >
-          <h2>Twitter</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4" >
-          <h2>Google+</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div></div>
-  <div class="tab-pane" id="custom">
-  <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4" >
-          <h2>custom</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4" >
-          <h2>Twitter</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4" >
-          <h2>Google+</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div></div>
-</div>
+                <!-- Example row of columns -->
+                <div class="row">
+                  <div class="col-md-4" >
+                    <h2>Facebook</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4" >
+                    <h2>Twitter</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4" >
+                    <h2>Google+</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="twitter">
+                <!-- Example row of columns -->
+                <div class="row">
+                  <div class="col-md-4" >
+                    <h2>twitter</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4" >
+                    <h2>Twitter</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4" >
+                    <h2>Google+</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="google">
+                <!-- Example row of columns -->
+                <div class="row">
+                  <div class="col-md-4" >
+                    <h2>google</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4" >
+                    <h2>Twitter</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4" >
+                    <h2>Google+</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                </div></div>
+                <div class="tab-pane" id="custom">
+                  <!-- Example row of columns -->
+                  <div class="row">
+                    <div class="col-md-4" >
+                      <h2>custom</h2>
+                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4" >
+                      <h2>Twitter</h2>
+                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4" >
+                      <h2>Google+</h2>
+                      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                  </div></div>
+                </div>
 
-      
-      
-      <hr>
 
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+                <hr>
 
-        <script src="js/main.js"></script>
+                <footer>
+                  <p>&copy; Company 2014</p>
+                </footer>
+              </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+              <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+              <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>fr
+              <script src="js/vendor/bootstrap.min.js"></script>
+              <script src="js/file-input.js"></script>
+              <script src="js/main.js"></script>
+              <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+              <script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
-</html>
+              (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+              e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+              e.src='//www.google-analytics.com/analytics.js';
+              r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+              ga('create','UA-XXXXX-X');ga('send','pageview');
+              </script>
+            </body>
+            </html>
