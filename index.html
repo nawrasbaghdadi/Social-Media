@@ -50,7 +50,7 @@
                       <h6 class="pull-right" id="counter"><span>320</span> characters remaining</h6>
                       <textarea class="form-control counted" name="message" placeholder="Type in your message" rows="5" style="margin-bottom:10px;"></textarea>
                       <div class="btn-group">
-                        <input type="file" data-filename-placement="inside">
+                        <input type="file" data-filename-placement="inside" id="post-img">
                         <button type="button" class="btn btn-default btn-sml" id="add-article"><span class="glyphicon glyphicon-plus"></span>
                         </button>
                         <div class="col-md-8 pull-right">
@@ -325,127 +325,620 @@
                 </ul>
               </div>
             </div>
-                 <div class="articles" id="alarabiya-panel">
-                  <div class="input-group custom-search-form">
-              <input type="text" class="form-control" id="search">
-              <span class="input-group-btn">
-              <button class="btn btn-default" type="button">
-              <span class="glyphicon glyphicon-ok"></span>
-             </button>
-             </span>
-             </div><!-- /input-group -->
+            <div class="articles" id="alarabiya-panel">
+              <div class="input-group custom-search-form">
+                <input type="text" class="form-control" id="search">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </button>
+                </span>
+              </div><!-- /input-group -->
+              <ul class="nav nav-pills nav-stacked">
+                <li class="feed-header">
+                  <a href="#" data-toggle="collapse" data-target="#hadath">
+                   Al Hadath
+                 </a>
+               </li>
+               <div id="hadath" class="collapse web-feed">
+                <ul>
+                  <li class="thumbnail">
+                    <a href="#">
+                      <img src="http://placehold.it/100X100&text=1" alt="ff" />
+                      <h6>بعد 7 سنوات من الخلاف.. ولادة حكومة فلسطين التوافقية</h6>
+                    </a>
+                  </li>
+                  <li class="thumbnail">
+                    <a href="#">
+                      <img src="http://placehold.it/100X100&text=1" alt="ff" />
+                      <h6>أعلن رئيس الوزراء الإسباني ماريانو راخوي، اليوم الاثنين</h6>
+                    </a>
+                  </li>
+                  <li class="thumbnail">
+                    <a href="#">
+                      <img src="http://placehold.it/100X100&text=1" alt="ff" />
+                      <h6>وأضاف راخوي أن الملك يريد التوجه "شخصياً الى الإسبان قبل ظهر" اليوم.</h6>
+                    </a>
+                  </li>
+                  <li class="thumbnail">
+                    <a href="#">
+                      <img src="http://placehold.it/100X100&text=1" alt="ff" />
+                      <h6>ملك إسبانيا يتنازل عن العرش لولي عهده</h6>
+                    </a>
+                  </li>
+                  <li class="thumbnail">
+                    <a href="#">
+                      <img src="http://placehold.it/100X100&text=1" alt="ff" />
+                      <h6>ملك إسبانيا يتنازل عن العرش لولي عهده</h6>
+                    </a>
+                  </li> 
+                </ul>
               </div>
-            <div class="container" id="page-content">
-             <ul class="nav nav-tabs layout-changer" id="layout-changer">
-              <li class="active"><a href="#facebook" data-toggle="tab">Facebook</a></li>
-              <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
-              <li><a href="#google" data-toggle="tab">Google+</a></li>
-              <li><a href="#custom" data-toggle="tab">Custom</a></li>
-            </ul>
-            <div class="tab-content">
-              <div class="tab-pane active" id="facebook">
+              <li class="feed-header">
+                <a href="#" data-toggle="collapse" data-target="#homepage">
+                 Home Page
+               </a>
+             </li>
+             <div id="homepage" class="collapse web-feed">
+              homepage
+            </div>
+          </ul>
+        </div>
+        <div class="container" id="page-content">
+         <ul class="nav nav-tabs layout-changer" id="layout-changer">
+          <li class="active"><a href="#facebook" data-toggle="tab">Facebook</a></li>
+          <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
+          <li><a href="#google" data-toggle="tab">Google+</a></li>
+          <li><a href="#custom" data-toggle="tab">Custom</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="facebook">
 
-                <!-- Example row of columns -->
-                <div class="row">
-                  <div class="col-md-4" >
-                    <h2>Facebook</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
-                  <div class="col-md-4" >
-                    <h2>Twitter</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
-                  <div class="col-md-4" >
-                    <h2>Google+</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
+            <!-- Example row of columns -->
+          <div class="feed-group">
+            <div class="col-md-4 feed" >
+              <div class="page-header text-center account-header twitter">
+                  <h2 id="timeline"><i class="fa fa-twitter"></i> AL Arabiya </h2>
                 </div>
+              <div class="feed-col">
+                <div class="page-header text-center account-header facebook">
+                  <h2 id="timeline"><i class="fa fa-facebook"></i>  AL Arabiya</h2>
+                </div>
+               <ul class="timeline">
+               <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+
+                 
+                  
+
+                  
+
+                  <li class="clearfix" style="float: none;"></li>
+                </ul>
               </div>
-              <div class="tab-pane" id="twitter">
-                <!-- Example row of columns -->
-                <div class="row">
-                  <div class="col-md-4" >
-                    <h2>twitter</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
-                  <div class="col-md-4" >
-                    <h2>Twitter</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
-                  <div class="col-md-4" >
-                    <h2>Google+</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
+            </div>
+            <div class="col-md-4 feed" >
+              <div class="page-header text-center account-header facebook">
+                  <h2 id="timeline"><i class="fa fa-facebook"></i> AL Arabiya </h2>
                 </div>
+              <div class="feed-col">
+                <div class="page-header text-center account-header facebook">
+                  <h2 id="timeline"><i class="fa fa-facebook"></i>  AL Arabiya</h2>
+                </div>
+               <ul class="timeline">
+               <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+
+                 
+                  
+
+                  
+
+                  <li class="clearfix" style="float: none;"></li>
+                </ul>
               </div>
-              <div class="tab-pane" id="google">
-                <!-- Example row of columns -->
-                <div class="row">
-                  <div class="col-md-4" >
-                    <h2>google</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
-                  <div class="col-md-4" >
-                    <h2>Twitter</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
-                  <div class="col-md-4" >
-                    <h2>Google+</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                  </div>
-                </div></div>
-                <div class="tab-pane" id="custom">
-                  <!-- Example row of columns -->
-                  <div class="row">
-                    <div class="col-md-4" >
-                      <h2>custom</h2>
-                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                    </div>
-                    <div class="col-md-4" >
-                      <h2>Twitter</h2>
-                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                    </div>
-                    <div class="col-md-4" >
-                      <h2>Google+</h2>
-                      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                    </div>
-                  </div></div>
+            </div>
+            <div class="col-md-4 feed" >
+              <div class="page-header text-center account-header twitter">
+                  <h2 id="timeline"><i class="fa fa-twitter"></i> AL Arabiya </h2>
                 </div>
+              <div class="feed-col">
+                <div class="page-header text-center account-header facebook">
+                  <h2 id="timeline"><i class="fa fa-facebook"></i>  AL Arabiya</h2>
+                </div>
+            <ul class="timeline">
+               <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="clearfix" style="float: none;"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 feed" >
+              <div class="page-header text-center account-header facebook">
+                  <h2 id="timeline"><i class="fa fa-facebook"></i> AL Arabiya </h2>
+                </div>
+              <div class="feed-col">
+                <div class="page-header text-center account-header facebook">
+                  <h2 id="timeline"><i class="fa fa-facebook"></i>  AL Arabiya</h2>
+                </div>
+                <ul class="timeline">
+               <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                  
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                       <span class="glyphicon glyphicon-user"></span>by <a href="#">Bhaumik</a> | <span class="glyphicon glyphicon-calendar">
+                            </span>Sept 16th, 2012 | <span class="glyphicon glyphicon-comment"></span><a href="#">
+                                3</a> | <i class="icon-share"></i><a href="#">39 Shares</a>
+                      </div>
+                    </div>
+                  </li>
+
+                 
+                  
+
+                  
+
+                  <li class="clearfix" style="float: none;"></li>
+                </ul>
+              </div>
+            </div>
+               <div class="col-md-4 feed" >
+              <div class="page-header text-center account-header twitter">
+                  <h2 id="timeline"><i class="fa fa-twitter"></i>  AL Arabiya</h2>
+                </div>
+              <div class="feed-col">
+                <div class="page-header text-center account-header twitter">
+                  <h2 id="timeline"><i class="fa fa-twitter"></i>  AL Arabiya</h2>
+                </div>
+                <ul class="timeline">
+                  <li>
+                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="10 hours ago via Twitter" id=""></i></a></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                        <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        <a><i class="glyphicon glyphicon-share"></i></a>
+                        <a class="pull-right">Continuar Lendo</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li  class="timeline-inverted">
+                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="10:30 hours ago via Twitter" id=""></i></a></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      </div>
+
+                      <div class="timeline-footer">
+                        <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        <a><i class="glyphicon glyphicon-share"></i></a>
+                        <a class="pull-right">Continuar Lendo</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                        <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        <a><i class="glyphicon glyphicon-share"></i></a>
+                        <a class="pull-right">Continuar Lendo</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li  class="timeline-inverted">
+                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived </p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                        <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        <a><i class="glyphicon glyphicon-share"></i></a>
+                        <a class="pull-right">Continuar Lendo</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                      </div>
+
+                      <div class="timeline-footer">
+                        <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        <a><i class="glyphicon glyphicon-share"></i></a>
+                        <a class="pull-right">Continuar Lendo</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li  class="timeline-inverted">
+                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+
+                      </div>
+                      <div class="timeline-body">
+                        <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+
+                      </div>
+
+                      <div class="timeline-footer primary">
+                        <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        <a><i class="glyphicon glyphicon-share"></i></a>
+                        <a class="pull-right">Continuar Lendo</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-body">
+                        <a href="#" class="remove-feed"><i class="glyphicon glyphicon-remove-sign"></i></a>
+                        <p><b>All the credits go to <a href="http://bootsnipp.com/rafamaciel">Rafamaciel</a></b></p>
+                        <p>I only make it responsive and remove the empty spaces to be more like Facebook timeline!</p>
+                      </div>
+
+                      <div class="timeline-footer primary">
+                        <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        <a><i class="glyphicon glyphicon-share"></i></a>
+                        <a class="pull-right">Continuar Lendo</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="clearfix" style="float: none;"></li>
+                </ul>
+              </div>
+            </div>
+
+</div>
 
 
 
-                <hr>
 
-                <footer>
-                  <p>&copy; Company 2014</p>
-                </footer>
-              </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-              <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-              <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>fr
-              <script src="js/vendor/bootstrap.min.js"></script>
-              <script src="js/file-input.js"></script>
-              <script src="js/main.js"></script>
-              <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-              <script>
+          </div>
+          <div class="tab-pane" id="twitter">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-4" >
+                <h2>twitter</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-4" >
+                <h2>Twitter</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-4" >
+                <h2>Google+</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="google">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-4" >
+                <h2>google</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-4" >
+                <h2>Twitter</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-4" >
+                <h2>Google+</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+            </div></div>
+            <div class="tab-pane" id="custom">
+              <!-- Example row of columns -->
+              <div class="row">
+                <div class="col-md-4" >
+                  <h2>custom</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4" >
+                  <h2>Twitter</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4" >
+                  <h2>Google+</h2>
+                  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+              </div></div>
+            </div>
 
-              (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-              e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-              e.src='//www.google-analytics.com/analytics.js';
-              r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-              ga('create','UA-XXXXX-X');ga('send','pageview');
-              </script>
-            </body>
-            </html>
+          </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+          <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+          <script src="js/vendor/bootstrap.min.js"></script>
+          <script src="js/file-input.js"></script>
+          <script src="js/main.js"></script>
+          <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+          <script>
+
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X');ga('send','pageview');
+          </script>
+        </body>
+        </html>

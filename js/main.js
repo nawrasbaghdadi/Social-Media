@@ -49,7 +49,58 @@ $(document).ready(function () {
 /////////Input File////////////    
     $('input[type=file]').bootstrapFileInput();
 /////////Input File////////////
-   
+/////////Close Menus////////////
+$(document).on('keydown',function (e){
+    if ( e.keyCode === 27 ) { // ESC
+      $('.feed-col').removeClass('active');
+    	if($('.articles').hasClass('articles-active') && $('.post-panel').hasClass('panel-active')){
+    		$('.articles').removeClass('articles-active');	
+    	}else
+        {
+        	$('.articles').removeClass('articles-active');	
+        	$('.post-panel').removeClass('panel-active');
+        	$('#side-nav > ul > li > a').removeClass('active');
+    	}  
+    }
+});
+/////////Close Menus////////////
+/////////Select Article////////////
+$('.web-feed li').on('click',function() {
+	var img = $(this).find('img').attr('src');
+	var title = $(this).find('h6').text();
+	$('#post-img').attr('title',img);
+	$('.counted').text(title);
+	$('.articles').removeClass('articles-active',1000);	
+
+})
+/////////Select Article////////////
+/////////Expand Account Feed////////////
+active('.feed-col');
+var my_posts = $("[rel=tooltip]");
+var size = $(window).width();
+for(i=0;i<my_posts.length;i++){
+    the_post = $(my_posts[i]);
+
+    if(the_post.hasClass('invert') && size >=767 ){
+      the_post.tooltip({ placement: 'left'});
+      the_post.css("cursor","pointer");
+    }else{
+      the_post.tooltip({ placement: 'rigth'});
+      the_post.css("cursor","pointer");
+    }
+  }
+/////////Expand Account Feed////////////
+$('.remove-feed').click(function(e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    alert('f');
+})
+/////////Expand Account Feed////////////
+/////////Total Width////////////
+var toatalFeeds= $('.feed').length;
+var total= toatalFeeds * 400;
+$('.feed-group').width(total);
+/////////Total Width////////////
 })
 
  //////Counter//////
@@ -73,6 +124,7 @@ $(document).ready(function () {
 	
 		var elem = $("#counter span");
         $(".counted").limiter(300, elem);
+
 
 ////////
  $.widget( "custom.catcomplete", $.ui.autocomplete, {
