@@ -9,24 +9,15 @@ $(document).ready(function () {
 
 	active('.accounts > ul > li');
 	active('#side-nav > ul > li > a');
-	function toggel (selector) {
-		$(this).toggleClass('active');
-		$el = $(this).clone();
-		if($(this).hasClass('active')){
-			$('.selected-accounts ul').append($el);	
-		}else{
-			console.log($el);
-			($el).remove();	
-		}
-	}
-	$('.acc-groups .thumbnail').on('click',function (e){
+  	$('.acc-groups .thumbnail').on('click',function (e){
 		 $(this).toggleClass('active',10).promise().done(function() {
 		 	$el = $(this).clone()[0];
 		 	id=$(this).attr('id');
 			if($(this).hasClass('active')){
+        $('.selected-accounts').addClass('active');
 			$('.selected-accounts ul').append($el);	
 			}else{
-			$('#'+id).remove();	
+			$('.selected-accounts #'+id).remove();	
 			}
 		});
 	})
@@ -40,6 +31,8 @@ $(document).ready(function () {
 	})
 	$('body').on('click', '.selected-accounts .thumbnail' ,function (e) {
 		e.preventDefault();
+    id=$(this).attr('id');
+    $('.acc-groups ').find('#'+id).removeClass('active');
 		$(this).remove();
 	})
     $('#layout-changer a').click(function (e) {
@@ -71,11 +64,10 @@ $('.web-feed li').on('click',function() {
 	$('#post-img').attr('title',img);
 	$('.counted').text(title);
 	$('.articles').removeClass('articles-active',1000);	
-
 })
 /////////Select Article////////////
 /////////Expand Account Feed////////////
-active('.feed-col');
+/*active('.feed-col');
 var my_posts = $("[rel=tooltip]");
 var size = $(window).width();
 for(i=0;i<my_posts.length;i++){
@@ -88,7 +80,7 @@ for(i=0;i<my_posts.length;i++){
       the_post.tooltip({ placement: 'rigth'});
       the_post.css("cursor","pointer");
     }
-  }
+  }*/
 /////////Expand Account Feed////////////
 $('.remove-feed').click(function(e) {
     e.preventDefault();
