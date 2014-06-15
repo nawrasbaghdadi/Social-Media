@@ -48,11 +48,13 @@ $(document).on('keydown',function (e){
       $('.feed-col').removeClass('active');
     	if($('.articles').hasClass('articles-active') && $('.post-panel').hasClass('panel-active')){
     		$('.articles').removeClass('articles-active');	
+        $('.post-panel').closest('form').find("input[type=text], textarea").val("");
     	}else
         {
         	$('.articles').removeClass('articles-active');	
         	$('.post-panel').removeClass('panel-active');
         	$('#side-nav > ul > li > a').removeClass('active');
+          $('.post-panel').closest('form').find("input[type=text], textarea").val("");
     	}  
     }
 });
@@ -66,22 +68,19 @@ $('.web-feed li').on('click',function() {
 	$('.articles').removeClass('articles-active',1000);	
 })
 /////////Select Article////////////
-/////////Expand Account Feed////////////
-/*active('.feed-col');
-var my_posts = $("[rel=tooltip]");
-var size = $(window).width();
-for(i=0;i<my_posts.length;i++){
-    the_post = $(my_posts[i]);
+//////////Retweet///////
+$('.retweet-feed').on('click',function(e) {
+  e.preventDefault();
+  e.stopImmediatePropagation();
+  $(this).closest('li');
+  var img = $(this).closest('li').find('img').attr('src');
+  var txt = $(this).closest('li').find('.timeline-body p').text();
+  $('.post-panel').toggleClass('panel-active');
+  $('#post-img').attr('title',img);
+  $('.counted').text(txt);
 
-    if(the_post.hasClass('invert') && size >=767 ){
-      the_post.tooltip({ placement: 'left'});
-      the_post.css("cursor","pointer");
-    }else{
-      the_post.tooltip({ placement: 'rigth'});
-      the_post.css("cursor","pointer");
-    }
-  }*/
-/////////Expand Account Feed////////////
+})
+//////////Retweet///////
 $('.remove-feed').click(function(e) {
     e.preventDefault();
     e.stopImmediatePropagation();

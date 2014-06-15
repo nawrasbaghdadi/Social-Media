@@ -284,10 +284,11 @@ a.active{
   display: block;
   overflow-x:scroll;
   background: #fff;
-  width: 380px;
-  height: 700px;
+  width: 300px;
+  height: 600px;
   left: 0;
   top:0;
+  margin-top: 70px;
   box-shadow: 1px 0px 5px #ccc;
   -moz-box-shadow: 1px 0px 5px #ccc;
   -webkit-box-shadow: 1px 0px 5px #ccc;
@@ -305,7 +306,7 @@ a.active{
 .col-md-4{
 margin-right: 10px;
 padding:0;
-width: 380px;
+width: 300px;
 }
 .feed-col.active{
   width: 600px;
@@ -323,6 +324,7 @@ width: 380px;
   width: 100%;
   margin-top: 0;
   padding:10px;
+  height: 70px;
 }
 .account-header h2{
   margin-top: 0;
@@ -335,7 +337,8 @@ width: 380px;
   background: #019ad2;
   color: #fff;
 }
-.remove-feed{
+.remove-feed,
+.retweet-feed{
   position: absolute;
   top: 0;
   left: 0;
@@ -343,6 +346,10 @@ width: 380px;
   color: #000;
 }
 .timeline-inverted .remove-feed{
+  right: 0;
+  left: auto;
+}
+.retweet-feed{
   right: 0;
   left: auto;
 }
@@ -430,7 +437,7 @@ width: 380px;
   margin-top: 5px;
 }
 .timeline-footer{
-    padding:20px;
+    padding:10px;
     background-color:#f4f4f4;
 }
 .timeline-footer > a{
